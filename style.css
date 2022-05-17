@@ -121,11 +121,11 @@
 	.sign--form p {
 		width: 100%;
 		border-radius: 12px;
-		font-size: 12px;
-		font-weight: 400;
+		font-size: 20px;
+		font-weight: 700;
 		line-height: 1.5;
-		background-color: hsl(202, 32%, 49%);
-
+		background-color: transparent;
+		color: hsl(202, 32%, 49%);
 		padding: 8px 32px;
 		text-align: center;
 	}
@@ -183,7 +183,7 @@
 @media screen and (min-width: 375px) {
 	.signup--form p,
 	.sign--form p {
-		font-size: 14px;
+		font-size: 20px;
 	}
 }
 
@@ -221,7 +221,7 @@
 
 	.signup--form p,
 	.sign--form p {
-		font-size: 12px;
+		font-size: 32px;
 	}
 
 	.signup--form form,
@@ -277,7 +277,7 @@
 	.signup--form p,
 	.sign--form p {
 		width: 100%;
-		font-size: 20px;
+		font-size: 48px;
 	}
 
 	.signup--form form,
@@ -319,7 +319,7 @@
 	}
 
 	.signup--form p {
-		font-size: 16px;
+		font-size: 52px;
 	}
 
 	.signup--form form {
