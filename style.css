@@ -141,7 +141,7 @@
 		flex-direction: column;
 		gap: 16px;
 		align-items: center;
-		padding: 24px 8px;
+		padding: 24px;
 	}
 
 	.sign--form small {
