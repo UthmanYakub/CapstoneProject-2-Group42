@@ -1,0 +1,332 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nav--active {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 70px;
+	transition: 0.7s ease-in-out;
+	z-index: 1000;
+}
+
+@media screen and (min-width: 320px) {
+	.body--container {
+		max-height: 500vh;
+		background: hsl(0, 95%, 9%) url(./img/bg-intro-mobile.png) repeat top;
+	}
+	.signup--section {
+		color: hsl(0, 0%, 100%);
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		padding: 80px 0;
+	}
+	.sign--section {
+		color: hsl(0, 0%, 100%);
+		padding: 80px 0;
+	}
+
+	.signup--text {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.signup--text h2 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.signup--text p {
+		color: hsl(0, 0%, 100%);
+		font-size: 16px;
+		letter-spacing: 0.75;
+		line-height: 1.2;
+	}
+
+	.signup--form {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+	}
+	.signup--form p {
+		width: 100%;
+		border-radius: 12px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.5;
+		background-color: hsl(202, 32%, 49%);
+		/* padding: 8px 80px; */
+		padding: 8px 32px;
+		text-align: center;
+	}
+
+	.signup--form form {
+		width: 100%;
+		background-color: hsl(0, 0%, 100%);
+		border-radius: 8px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: center;
+		padding: 24px;
+	}
+
+	.signup--form form input[type="submit"],
+	.sign--form form input[type="submit"] {
+		color: hsl(0, 0%, 100%);
+		text-transform: uppercase;
+		padding: 16px 24px;
+		border-radius: 24px;
+		font-weight: 700;
+		background-color: hsl(202, 32%, 49%);
+		border: 1px solid hsl(202, 32%, 49%);
+	}
+
+	.signup--form small {
+		font-size: 12px;
+		line-height: 1.5;
+		color: hsl(246, 25%, 77%);
+		text-align: center;
+		padding: 0 24px;
+		/* margin-top: -10px; */
+	}
+
+	.signup--form small a:link,
+	.signup--form small a:visited,
+	.signup--form small a:active,
+	.signup--form small a:hover {
+		color: hsl(202, 32%, 49%);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	.sign--form {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+	}
+	/* s */
+	.sign--form p {
+		width: 100%;
+		border-radius: 12px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1.5;
+		background-color: hsl(202, 32%, 49%);
+
+		padding: 8px 32px;
+		text-align: center;
+	}
+
+	/* s */
+
+	.sign--form form {
+		width: 100%;
+		background-color: hsl(0, 0%, 100%);
+		border-radius: 8px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: center;
+		padding: 24px 8px;
+	}
+
+	.sign--form small {
+		font-size: 12px;
+		line-height: 1.5;
+		color: hsl(246, 25%, 77%);
+		text-align: center;
+		padding: 0 24px;
+		/* margin-top: -10px; */
+	}
+
+	.sign--form small a:link,
+	.sign--form small a:visited,
+	.sign--form small a:active,
+	.sign--form small a:hover {
+		color: hsl(0, 95%, 9%);
+		font-weight: 700;
+		text-decoration: none;
+	}
+
+	footer {
+		padding-bottom: 20px;
+		/* bottom: 32px; */
+		/* left: 50%; */
+		/* transform: translateX(-50%); */
+		text-align: center;
+	}
+
+	.attribution {
+		color: hsl(0, 0%, 100%);
+		font-size: 12px;
+		text-align: center;
+	}
+	.attribution a {
+		color: hsl(41, 100%, 50%);
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.signup--form p,
+	.sign--form p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.signup--section,
+	.sign--section {
+		background: hsl(0, 95%, 9%) url(./img/bg-intro-mobile.png) repeat top;
+		gap: 64px;
+	}
+
+	.signup--text {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.signup--text h2 {
+		font-size: 44px;
+		margin-bottom: 48px;
+	}
+
+	.signup--text p {
+		font-size: 30px;
+		line-height: 1.2;
+	}
+
+	.signup--form {
+		width: 60%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.signup--form p,
+	.sign--form p {
+		font-size: 12px;
+	}
+
+	.signup--form form,
+	.sign--form form {
+		gap: 16px;
+		padding: 32px;
+	}
+	.signup--form small,
+	.sign--form small {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.body--container {
+		background: hsl(0, 95%, 9%) url(./img/bg-intro-desktop.png) no-repeat top;
+	}
+	.signup--section {
+		color: hsl(0, 0%, 100%);
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: row;
+		gap: 64px;
+
+		padding: 80px 128px;
+	}
+
+	.signup--text {
+		width: 100%;
+		margin: 0;
+		text-align: left;
+	}
+
+	.signup--text h2 {
+		font-size: 40px;
+		margin-bottom: 32px;
+	}
+
+	.signup--text p {
+		font-size: 20px;
+	}
+
+	.signup--form {
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+
+	.signup--form p,
+	.sign--form p {
+		width: 100%;
+		font-size: 20px;
+	}
+
+	.signup--form form,
+	.sign--form form {
+		width: 100%;
+		margin: 0;
+		gap: 16px;
+		padding: 48px;
+	}
+
+	.signup--form small,
+	.sign--form small {
+		font-size: 12px;
+		padding: 0 20px;
+	}
+
+	.sign--form {
+		width: 50%;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.signup--text h2 {
+		font-size: 72px;
+		margin-bottom: 32px;
+	}
+
+	.signup--text p {
+		font-size: 30px;
+	}
+
+	.signup--form {
+		gap: 32px;
+	}
+
+	.signup--form p {
+		font-size: 16px;
+	}
+
+	.signup--form form {
+		gap: 18px;
+	}
+
+	.signup--form small {
+		font-size: 16px;
+	}
+}

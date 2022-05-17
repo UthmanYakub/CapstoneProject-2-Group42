@@ -1,0 +1,189 @@
+/*------ Navbar Styling ------*/
+
+.navbar {
+	font-family: "Montserrat";
+	padding: 15px 0;
+	background-color: #ffffff !important;
+	border-bottom: 1px solid #efeff1;
+	-webkit-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+}
+
+.navbar .navbar-brand {
+	font-family: "Montserrat";
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: #333347 !important;
+	vertical-align: middle;
+}
+
+.navbar .navbar-brand img {
+	vertical-align: middle;
+	margin-right: 0.3em;
+}
+
+.navbar .navbar-toggler {
+	border: none;
+}
+
+.navbar span.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar span.navbar-toggler-icon::before {
+	outline: none;
+}
+
+.navbar .navbar-toggler:focus {
+	outline: none;
+}
+
+.navbar-nav {
+	height: auto;
+	background: hsl(202, 32%, 49%) !important;
+	padding: 0 1.5rem;
+	display: flex;
+	align-items: center;
+	border-left: 1px solid hsl(240, 9%, 96%);
+	-webkit-transition: 0.5s all ease; /* For Safari 3.1 to 6.0 */
+	transition: 0.5s all ease;
+}
+
+.navbar-nav .nav-item {
+	margin-right: 0;
+	margin-top: 1.5rem;
+	font-size: 0.85rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	color: hsl(240, 16%, 24%);
+	display: flex;
+}
+
+.navbar-nav .nav-item .nav-link {
+	color: hsl(240, 16%, 24%);
+	font-weight: 500;
+	display: flex;
+	vertical-align: middle;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: hsl(240, 16%, 24%);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+	color: hsl(240, 16%, 24%);
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+	margin: 0 !important;
+	padding: 8px 24px !important;
+	border-radius: 24px !important;
+	background: hsl(202, 32%, 49%);
+	color: hsl(0, 0%, 100%) !important;
+}
+
+.btn-nav:hover {
+	color: hsl(0, 95%, 9%) !important;
+	background: hsl(0, 0%, 100%);
+}
+
+.btn-nav:focus,
+.btn-nav:active {
+	background: hsl(0, 0%, 100%);
+	color: hsl(0, 95%, 9%);
+}
+
+/*------ nav Transparent Styling ------*/
+
+.nav-white {
+	background-color: transparent !important;
+	border-bottom: 1px solid transparent;
+	padding: 20px 0;
+}
+
+.nav-white span.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='hsl(202, 32%, 49%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-white .navbar-nav {
+	background: transparent !important;
+	border-left: 1px solid transparent;
+}
+
+.nav-white .navbar-brand {
+	color: hsl(202, 32%, 49%) !important;
+}
+
+.nav-white .nav-item .nav-link {
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar {
+		padding: 15px;
+	}
+
+	.navbar .navbar-nav {
+		background: #ffffff !important;
+		padding-bottom: 50px;
+	}
+
+	.navbar-nav .nav-item {
+		display: block;
+	}
+
+	.nav-white .nav-item .nav-link {
+		color: #4957b8;
+	}
+
+	.navbar .btn-cta {
+		padding: 0 30px;
+	}
+}
+
+@media only screen and (min-width: 240px) {
+	.navbar.past-main {
+		background: #ffffff !important;
+		border-bottom: 1px solid #efeff1;
+	}
+
+	.navbar.effect-main {
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.navbar.past-main .navbar-brand {
+		color: #333347 !important;
+	}
+
+	.nav-white.past-main .nav-item .nav-link {
+		color: #333347;
+		font-weight: 500;
+	}
+
+	.navbar.past-main .nav-item .nav-link {
+		color: #333347;
+		font-weight: 500;
+	}
+
+	.navbar.past-main .nav-item:hover .nav-link {
+		color: hsl(0, 95%, 9%);
+	}
+
+	.navbar.past-main .navbar-brand {
+		color: hsl(0, 95%, 9%);
+	}
+
+	.nav-white.past-main span.navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+
+	.nav-white.effect-main {
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+}

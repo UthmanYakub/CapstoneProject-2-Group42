@@ -1,0 +1,91 @@
+.hidden {
+	display: none;
+}
+
+.bi {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 36px;
+	right: 5px;
+	z-index: 5;
+	color: black;
+}
+
+.icon--p {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 36px;
+	right: 32px;
+	pointer-events: none;
+	z-index: 2;
+}
+.icon {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 36px;
+	right: 5px;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.icon-success {
+	fill: hsl(120, 100%, 25%);
+}
+
+.icon-error {
+	fill: hsl(0, 100%, 50%);
+}
+
+.label {
+	font-weight: bold;
+	display: block;
+	color: hsl(0, 0%, 20%);
+	margin-bottom: 0.25rem;
+	color: hsl(218, 23%, 23%);
+}
+
+.input {
+	appearance: none;
+	display: block;
+	width: 100%;
+	color: hsl(218, 23%, 23%);
+	border: 1px solid hsl(211, 25%, 84%);
+	line-height: 1.25;
+	background-color: hsl(0, 0%, 100%);
+	padding: 0.65rem 0.75rem;
+	border-radius: 0.25rem;
+	box-shadow: inset 0 2px 4px 0 hsla(0, 0%, 0%, 0.06);
+}
+
+.input::placeholder {
+	color: hsl(214, 20%, 69%);
+}
+
+.input:focus {
+	outline: none;
+	border: 1px solid hsl(214, 20%, 69%);
+	box-shadow: 0 1px 3px 0 hsla(0, 0%, 0%, 0.1),
+		0 1px 2px 0 hsla(0, 0%, 0%, 0.06);
+	background-clip: padding-box;
+}
+
+.input-error {
+	border: 1px solid hsl(0, 100%, 50%);
+}
+
+.input-error:focus {
+	border: 1px solid hsl(0, 100%, 50%);
+}
+
+.input-group {
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.error-message {
+	font-size: 0.85rem;
+	color: hsl(0, 100%, 50%);
+}
