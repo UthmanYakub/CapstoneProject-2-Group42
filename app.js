@@ -6,7 +6,7 @@ let nav = document.querySelector("#nav");
 window.addEventListener("scroll", function () {
 	// we round here to reduce a little workload
 	// stop = Math.round(window.scrollTop());
-	if (window.pageYOffset > 80) {
+	if (window.pageYOffset > 1) {
 		nav.classList.add("past-main");
 		nav.classList.add("transution-effect");
 		// nav.classList.add("fixed-top");
