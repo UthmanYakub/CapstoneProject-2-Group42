@@ -32,9 +32,12 @@
 		<title>Capstone project GROUP 42</title>
 	</head>
 	<body>
-		<div class="body--container">
+		<section class="body--container">
 			<!-- Navbar Section -->
-			<nav class="navbar navbar-expand-md navbar-light bg-light nav-white">
+			<nav
+				class="navbar navbar-expand-md navbar-light bg-light nav-white fixed-top"
+				id="nav"
+			>
 				<div class="container container-m">
 					<a class="navbar-brand" href="#">GROUP 42.</a>
 					<button class="navbar-toggler" type="button">
@@ -67,60 +70,62 @@
 				</div>
 			</nav>
 			<!-- Navbar End -->
-			<section class="sign--section">
-				<div class="sign--form">
-					<p class="title"><strong>Recover password</strong></p>
-					<form action="#" class="form">
-						<div class="input-group">
-							<label for="email" class="label">Email</label>
-							<input
-								id="email"
-								type="email"
-								class="input"
-								autocomplete
-								placeholder="name@example.com"
-							/>
-							<span class="error-message"></span>
-							<svg
-								class="icon icon-success hidden"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-									clip-rule="evenodd"
+			<main class="height">
+				<section class="sign--section">
+					<div class="sign--form">
+						<p class="title"><strong>Recover password</strong></p>
+						<form action="#" class="form">
+							<div class="input-group">
+								<label for="email" class="label">Email</label>
+								<input
+									id="email"
+									type="email"
+									class="input"
+									autocomplete
+									placeholder="name@example.com"
 								/>
-							</svg>
+								<span class="error-message"></span>
+								<svg
+									class="icon icon-success hidden"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+										clip-rule="evenodd"
+									/>
+								</svg>
 
-							<svg
-								class="icon icon-error hidden"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 20 20"
-								fill="currentColor"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-						</div>
+								<svg
+									class="icon icon-error hidden"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</div>
 
-						<input type="submit" class="button" value="Recover password" />
-					</form>
-				</div>
-			</section>
-			<!-- footer section -->
-			<footer>
-				<p class="attribution">
-					Capstone Project by
-					<a href="https://lms.terrahq.co/" target="_blank"> Side Hustle </a>.
-					Coded by <a href="https://github.com/UthmanYakub">Group 42</a>.
-				</p>
-			</footer>
-		</div>
+							<input type="submit" class="button" value="Recover password" />
+						</form>
+					</div>
+				</section>
+				<!-- footer section -->
+				<footer>
+					<p class="attribution">
+						Capstone Project by
+						<a href="https://lms.terrahq.co/" target="_blank"> Side Hustle </a>.
+						Coded by <a href="https://github.com/UthmanYakub">Group 42</a>.
+					</p>
+				</footer>
+			</main>
+		</section>
 		<script src="./app.js"></script>
 		<script src="./recoverpass.js"></script>
 	</body>

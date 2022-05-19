@@ -2,11 +2,11 @@
 
 .navbar {
 	font-family: "Montserrat";
-	padding: 15px 0;
+	padding: 15px;
 	background-color: #ffffff !important;
 	border-bottom: 1px solid #efeff1;
-	-webkit-transition: 0.5s all ease;
-	transition: 0.5s all ease;
+	-webkit-transition: 0.5s all ease-in-out;
+	transition: 0.5s all ease-in-out;
 }
 
 .navbar .navbar-brand {
@@ -14,8 +14,7 @@
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 3px;
-	color: #333347 !important;
-	vertical-align: middle;
+	color: hsl(202, 32%, 49%) !important;
 }
 
 .navbar .navbar-brand img {
@@ -28,7 +27,7 @@
 }
 
 .navbar span.navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='hsl(202, 32%, 49%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar span.navbar-toggler-icon::before {
@@ -56,25 +55,25 @@
 	font-size: 0.85rem;
 	font-weight: 400;
 	text-transform: capitalize;
-	color: hsl(240, 16%, 24%);
+	color: hsl(202, 32%, 49%);
 	display: flex;
 }
 
 .navbar-nav .nav-item .nav-link {
-	color: hsl(240, 16%, 24%);
+	color: hsl(202, 32%, 49%);
 	font-weight: 500;
 	display: flex;
 	vertical-align: middle;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-	color: hsl(240, 16%, 24%);
+	color: hsl(202, 32%, 49%);
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .navbar-nav .nav-item .nav-link:focus {
-	color: hsl(240, 16%, 24%);
+	color: hsl(202, 32%, 49%);
 }
 
 .btn-nav:link,
@@ -147,26 +146,26 @@
 
 @media only screen and (min-width: 240px) {
 	.navbar.past-main {
-		background: #ffffff !important;
-		border-bottom: 1px solid #efeff1;
+		background: hsl(0, 95%, 9%) url(./img/bg-intro-desktop.png) !important;
+		border-bottom: 2px solid hsl(202, 32%, 49%);
 	}
 
 	.navbar.effect-main {
-		-webkit-transition: all 0.3s;
-		transition: all 0.3s;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 
 	.navbar.past-main .navbar-brand {
-		color: #333347 !important;
+		color: hsl(202, 32%, 49%) !important;
 	}
 
 	.nav-white.past-main .nav-item .nav-link {
-		color: #333347;
+		color: hsl(202, 32%, 49%);
 		font-weight: 500;
 	}
 
 	.navbar.past-main .nav-item .nav-link {
-		color: #333347;
+		color: hsl(202, 32%, 49%);
 		font-weight: 500;
 	}
 
@@ -179,11 +178,11 @@
 	}
 
 	.nav-white.past-main span.navbar-toggler-icon {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.6)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='hsl(202, 32%, 49%)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 	}
 
 	.nav-white.effect-main {
-		-webkit-transition: all 0.3s;
-		transition: all 0.3s;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 	}
 }
